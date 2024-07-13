@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './App.css'
 import yashKalraImage from './images/yash.jpg'
 
 // Function to show month date year
@@ -55,15 +56,25 @@ const TechList = ({ techs }) => {
   return techList
 }
 
-// User Card Component
-const UserCard = ({ user: { firstName, lastName, image } }) => (
-  <div className='user-card'>
-    <img src={image} alt={firstName} />
-    <h2>
-      {firstName} {lastName}
-    </h2>
-  </div>
-)
+// UserCard Component
+const UserCard = ({ user }) => {
+  return (
+    <div className="user-card">
+      <img src={user.avatar} alt={user.name} className="avatar" />
+      <div className="user-info">
+        <h2>{user.name} <span className="verified">&#10004;</span></h2>
+        <p>{user.title}, {user.location}</p>
+        <h3>SKILLS</h3>
+        <div className="skills">
+          {user.skills.map((skill, index) => (
+            <span key={index} className="skill">{skill}</span>
+          ))}
+        </div>
+        <p className="joined"><span className="joined-icon">&#128197;</span> Joined on {user.joined}</p>
+      </div>
+    </div>
+  );
+};
 
 // A button component
 const Button = ({ text, onClick, style }) => (
@@ -111,6 +122,8 @@ const Footer = ({ copyRight }) => (
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
+  const [showUserCard, setShowUserCard] = useState(false);
+
   const data = {
     welcome: 'Welcome to 30 Days Of React',
     title: 'Getting Started with React',
@@ -121,14 +134,23 @@ const App = () => {
     },
     date: new Date(), // date needs to be formatted to a human readable format
   }
+
   const date = new Date()
   const techs = ['HTML', 'CSS', 'JavaScript']
-  // copying the author from data object to user variable using spread operator
-  const user = { ...data.author, image: yashKalraImage }
+
+  const user = {
+    avatar: yashKalraImage,
+    name: 'Yash Kalra',
+    title: 'Software Engineer',
+    location: 'India',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js'],
+    joined: '11 July, 2024'
+  };
 
   const handleTime = () => {
     alert(showDate(new Date()))
   }
+
   const greetPeople = () => {
     alert('Welcome to 30 Days Of React Challenge, 2024')
   }
@@ -136,6 +158,13 @@ const App = () => {
   return (
     <div className='app'>
       <Header data={data} />
+      {!showUserCard ? (
+        <button className="show-user-card-button" onClick={() => setShowUserCard(true)}>
+          Show User Card
+        </button>
+      ) : (
+        <UserCard user={user} />
+      )}
       <Main
         user={user}
         techs={techs}
