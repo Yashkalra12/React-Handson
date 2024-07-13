@@ -1,0 +1,93 @@
+/* index.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-wrapper h1 {
+  color: #333;
+}
+
+.header-wrapper h2 {
+  color: #555;
+}
+
+.header-wrapper h3 {
+  color: #777;
+}
+
+.header-wrapper small {
+  color: #999;
+}
+
+.main-wrapper {
+  text-align: center;
+}
+
+.user-card {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.user-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.user-card h2 {
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #eee;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #61dbfb;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a1d1;
+}
+
+.footer-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
