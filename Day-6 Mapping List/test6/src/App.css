@@ -1,0 +1,64 @@
+/* App.css */
+.app {
+  text-align: center;
+}
+
+.number-grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.number-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.number-box.even {
+  background-color: #28a745;
+}
+
+.number-box.odd {
+  background-color: #ffc107;
+  color: black;
+}
+
+.number-box.prime {
+  background-color: #dc3545;
+}
+
+.button-container {
+  margin: 20px 0;
+}
+
+.exercise-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.exercise-button:hover {
+  background-color: #0056b3;
+}
+
+.intro {
+  margin: 20px;
+  font-size: 18px;
+}
+
+.exercise-section {
+  margin: 20px;
+}
