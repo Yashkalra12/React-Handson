@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import './styles.css';
 
 const App = () => {
@@ -80,7 +81,6 @@ const App = () => {
         ...getTimeOfDayStyle(timeOfDay),
         height: '100vh',
         padding: '20px',
-        transition: 'background-color 0.5s ease'
       }}
     >
       <h1>Season and Time Based Background</h1>
@@ -95,4 +95,4 @@ const App = () => {
   );
 };
 
-export default App;
+ReactDOM.render(<App />, document.getElementById('root'));
