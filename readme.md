@@ -1,22 +1,17 @@
+React Hands-On
+Hi there! 👋 I’m Yash Kalra, a Full Stack Developer passionate about web development. I’m excited to share that I’m diving into a hands-on journey to sharpen my React skills and build real-world applications.
 
-## 30 Days of React
+What is React Hands-On?
+This initiative is all about learning by doing—building, experimenting, and reinforcing React concepts through projects. My goal is to deepen my understanding and apply best practices effectively.
 
-Hi there! 👋 I’m Yash Kalra, a Full Stack Developer passionate about web development. I’m excited to share that I’m embarking on a 30-day journey to deepen my knowledge of React and enhance my web development skills.
+How I'm Approaching This
+Exploring documentation: Going through official React resources to strengthen my fundamentals.
+Building projects: Creating components and applications to apply and reinforce concepts.
+Committing regularly: Documenting my progress, sharing insights, and keeping track of what I build.
+This journey will help me refine my React skills, improve my problem-solving abilities, and stay consistent in my learning process. I hope it also encourages others to take on hands-on coding challenges!
 
-### What is 30 Days of React?
-
-Over the next 30 days, I’ll be focusing on mastering React concepts by:
-- **Exploring documentation**: Diving into official React resources to understand core features and best practices.
-- **Building projects**: Developing small applications and components to apply what I learn.
-- **Committing daily**: Documenting my progress, sharing my work, and showcasing my commitment to consistent learning.
-
-This challenge is designed to help me revisit React fundamentals, build discipline, and demonstrate my dedication to growth in web development. I hope my journey can inspire others to take on their own learning challenges!
-
-### What to Expect
-
-- **Daily updates**: Regular commits with explanations of what I’ve learned or built each day.
-- **Projects and components**: Code and examples of various React applications and features.
-- **Learning resources**: Links to documentation, tutorials, and articles I’m using.
-
-Join me on this coding adventure as I dive into React and work towards becoming a better developer! 🚀
-
+What to Expect
+Frequent updates: Regular commits showcasing what I’ve built or learned.
+Practical projects: Real-world applications and reusable components.
+Learning resources: Documentation, tutorials, and insightful articles I find useful.
+Join me as I code, experiment, and grow as a React developer! 🚀
